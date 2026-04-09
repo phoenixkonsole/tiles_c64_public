@@ -1,0 +1,86 @@
+TileDesk64 Editor – User Guide (Pro Mode v0.1)
+
+The editor is a lightweight, fast text editor designed for the C64, optimized for minimal CPU usage and smooth interaction even in split layouts.
+
+⸻
+
+Basic Usage
+
+Typing
+	•	Just start typing to insert text
+	•	RETURN inserts a new line
+	•	DEL / BACKSPACE deletes characters
+
+⸻
+
+Navigation
+	•	Cursor Left / Right: move cursor horizontally
+	•	Cursor Up / Down: move between lines
+	•	CTRL + A: jump to start of line
+	•	CTRL + E: jump to end of line
+
+⸻
+
+Editing
+	•	BACKSPACE: delete character before cursor
+	•	CTRL + D: delete character at cursor (forward delete)
+
+⸻
+
+Saving
+	•	CTRL + S: save current file
+
+Files are saved to the internal filesystem and written to disk.
+
+⸻
+
+View Options
+	•	CTRL + P: toggle preview mode (DIN A4 style layout)
+	•	CTRL + L: toggle line numbers
+
+⸻
+
+Scrolling
+	•	Automatic vertical scrolling
+	•	Cursor always stays visible
+	•	No manual scrolling required
+
+⸻
+
+Opening Files
+
+From terminal:
+
+open /home/test.txt
+
+If no file is specified, the editor defaults to:
+
+/home/notes.txt
+
+⸻
+
+Menu (RUN/STOP → m)
+
+Open menu:
+RUN/STOP → m
+
+Menu entries:
+	•	Editor v0.1
+	•	Save
+	•	Toggle Line Numbers
+	•	Toggle Preview
+
+Controls:
+	•	Cursor Up / Down to navigate
+	•	ENTER to select
+	•	RUN/STOP to close
+
+⸻
+
+Performance
+
+The editor is optimized for the C64 environment:
+	•	No full screen redraws
+	•	Minimal gotoxy() usage
+	•	No flickering
+	•	Smooth typing even in split view with multiple apps
